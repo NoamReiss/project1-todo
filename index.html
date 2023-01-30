@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="header"><h1>My Task Board</h1></div>
+    <div class="box">
+      <form action="javascript:myAction()" id="myForm">
+        <input
+          type="text"
+          name="taskName"
+          id="taskName"
+          placeholder="task?"
+          required /><br /><br />
+        <input type="date" name="date" id="date" required />
+        <input type="time" name="time" id="time" required />
+        <br /><br />
+        <input class="sub-btn" type="submit" value="submit" />
+        <input class="sub-btn" type="reset" value="reset" />
+      </form>
+    </div>
+    <div id="notes"></div>
+  </body>
+</html>
